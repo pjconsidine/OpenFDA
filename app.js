@@ -1,6 +1,6 @@
 function search(){
 	$("#effects").html('');
-	var key = "7PcXD9iQU905xvCopWU8Nqkiy8GoiEnwpCQkcl5O"
+	var key = "z9QVJMAfnJkGN8V48Cs4pzYUS0XTEqksWsMi0jvr"
 	var searchTerm = document.getElementById("fdaSearch").value
 
 	$.ajax({
@@ -22,3 +22,18 @@ function search(){
 	   type: 'GET'
 	});
 }
+
+/*
+$.getJSON("/json/cats.json", function(json) {
+	var html = "";
+	json.forEach(function(val) {
+		var keys = Object.keys(val);
+		html += "<div class = 'cat'>";
+		keys.forEach(function(key) {
+			html += "<b>" + key + "</b>: " + val[key] + "<br />";
+			html += "</div><br />";
+		});
+	});
+	$(".message").html(html);
+});
+*/
