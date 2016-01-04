@@ -7,6 +7,9 @@
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<meta name="description" content="Learning...always learning">
 		<meta name="author" content="Pete Considine, SevenLetters, Inc.">
+		
+		<!-- Firebase js library -->
+<!-- 		<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script> -->
 
 		<title>SevenLetters, Inc.</title>
 
@@ -19,9 +22,29 @@
 	<div class = "container-fluid">
 		<div class="row">
 			<div class="col-md-12">
-				<h3 class="header">OpenFDA DB Fields</h3>
-				<button type="button" name="submit" value="submit" class="btn btn-danger" >Submit</button>
-				<p class="message">This is a message.</p>
+				<h2 class="header">OpenFDA Adverse Drug Reactions</h2>
+					<form class=" row form-group">
+						<div class="col-md-4">
+							<div class="form-group" id="search-form">
+								<label>Patient Age</label><input class="form-control" type="number" name="patientAge"></input>
+							</div>
+							<div class="form-group">
+								<label>Patient Condition</label> <input class="form-control" type="text" name="patientCondition"></input>
+							</div>
+							<div class="form-group">
+								<label>Drug Prescribed</label> <input class="form-control" type="text" name="patientDrug"></input>
+							</div>
+							<button type="button" name="submit" value="submit" class="btn btn-primary" >Submit</button>
+							<button type="button" name="reset" value="reset" class="btn btn-default" >Reset</button>
+						</div> <!-- col-md-6 -->
+					</form> <!-- form-group -->
+				<div class="row">
+					<div class="col-md-6">
+						<ul>
+							<p class="message">Enter your search terms</p>
+						</ul>
+					</div> <!-- col-md-6 -->
+				</div> <!-- row -->
 			</div> <!-- col-md-12 -->
 		</div> <!-- row -->
 	</div> <!-- container-fluid -->
