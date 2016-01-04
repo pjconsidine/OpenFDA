@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Open FDA</title>
-    
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="viewport" content="initial-scale=1">
-</head>
-<body>
-    <div id='wrapper'>
-    	<h1 id='title'>FDA DRUG SEARCH</h1>
-	   		<input id="fdaSearch" type="text" />
-	    	<button onclick="search()">Search</button>
-    	<div id='effects'></div>
-    </div>
-    <img id="bottle" src="http://www.clker.com/cliparts/V/J/c/o/j/t/medicine-bottle-hi.png" alt="pill bottle" />
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="Learning...always learning">
+		<meta name="author" content="Pete Considine, SevenLetters, Inc.">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="./js/app.js"></script>
-</body>
+		<title>SevenLetters, Inc.</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	
+	<body>
+	<div class = "container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="header">OpenFDA DB Fields</h3>
+				<button type="button" name="submit" value="submit" class="btn btn-danger" >Submit</button>
+				<p class="message">This is a message.</p>
+			</div> <!-- col-md-12 -->
+		</div> <!-- row -->
+	</div> <!-- container-fluid -->
+	
+		<script src="js/jquery.min.js"></script>
+		<script src="js/handlebars.min.js"></script>
+		<script src="js/app.js"></script>
+	</body>
 </html>
